@@ -26,7 +26,7 @@ jobs:
         run: |
           tar czvf scan.tgz cov-int
           curl --form token=${{ secrets.COVERITY_TOKEN }} \
-               --form email=jeremy.long@gmail.com \
+               --form email=testanptest@gmail.com \
                --form file=@scan.tgz \
                --form version="main" \
                --form description="Weekly Scan" \
